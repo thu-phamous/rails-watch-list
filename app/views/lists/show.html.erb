@@ -1,0 +1,9 @@
+<h1><%= @list.name %></h1>
+<p>Do you want to see more movies?</p>
+<ul>
+  <% @list.movies.each do |movie| %>
+    <li><%= movie.title %></li>
+  <% end %>
+</ul>
+<%= link_to "Back to Lists", lists_path, class: "btn btn-primary" %>
+<%= button_to "Delete", @post, method: :delete, class: "btn btn-secondary" %>

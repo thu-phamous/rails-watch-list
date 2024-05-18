@@ -1,0 +1,7 @@
+<h1>Add Movie to the list</h1>
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%= f.submit 'Add Movie to list', class: "btn btn-primary" %>
+  <%= link_to "Back to Lists", lists_path, class: "btn btn-primary"  %>
+  <%# <%= f.input :category, collection: ['drama', 'horror', 'comedy', 'sci-fi', 'psycho'] %>
+<% end %>

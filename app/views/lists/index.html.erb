@@ -1,0 +1,14 @@
+<h1>Lists</h1>
+
+<ul>
+  <% @lists.each do |list| %>
+    <li>
+      <%= link_to list.name, list %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to 'New List', new_list_path, class: "btn btn-primary" %>
+
+<%# die drama, Mr. Smith Goes to Washington, die angezeigt werden auf der website habe ich %>
+<%# über das Terminal gemacht, indem ich die Titel einfach in die Database eingespeichert habe. %>
+<%# List.create(name:"Mr. Smith Goes to Washington") %>
